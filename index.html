@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gamer Squad Interactive Hub</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>🎮 Gamer Squad Interactive Hub</h1>
+    <p>Join the Squad and unlock your potential!</p>
+  </header>
+
+  <!-- Part 1: Animated Button -->
+  <section>
+    <h2>✨ Squad Join Button</h2>
+    <button class="pulse-btn">Join the Squad</button>
+  </section>
+
+  <!-- Part 2: XP Calculator -->
+  <section>
+    <h2>⚡ XP Calculator</h2>
+    <label>Kills: <input type="number" id="kills" value="0"></label>
+    <label>Assists: <input type="number" id="assists" value="0"></label>
+    <button id="calcXPBtn">Calculate XP</button>
+    <p id="xpResult"></p>
+  </section>
+
+  <!-- Part 3: Loot Box -->
+  <section>
+    <h2>🎁 Power-Up Loot Box</h2>
+    <div id="lootBox" class="box">💠</div>
+    <button id="openBoxBtn">Open Loot Box</button>
+  </section>
+
+  <!-- Part 4: Mystery Flip Card -->
+  <section>
+    <h2>🎲 Mystery Box Flip</h2>
+    <div class="card" id="mysteryCard">
+      <div class="card-inner">
+        <div class="card-front">❓ Mystery Box</div>
+        <div class="card-back">🎉 Rare Skin Unlocked!</div>
+      </div>
+    </div>
+    <button id="flipCardBtn">Flip Card</button>
+  </section>
+
+  <!-- Part 5: Mission Modal -->
+  <section>
+    <h2>📜 Mission Briefing</h2>
+    <button id="openModalBtn">Open Briefing</button>
+    <div id="missionModal" class="modal">
+      <div class="modal-content">
+        <span id="closeModalBtn">&times;</span>
+        <h3>Mission: Squad Domination</h3>
+        <p>Your squad must capture the enemy base without being detected. Stealth is key!</p>
+      </div>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
